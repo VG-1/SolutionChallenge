@@ -12,9 +12,11 @@ p {
 }
 
 .hm-cont-bg {
+   max-height: 500px;
    background-position: 50%;
    background-size: cover;
    display: flex;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
    padding: 10% 5% ;
@@ -33,6 +35,37 @@ p {
    font-family: 'Bitter', serif;
    font-weight: 600;
    font-size: 3rem;
+}
+
+.c-btn {
+   margin-top: 5%;
+
+}
+
+.cta-btn {
+   text-decoration: none;
+   background-color: transparent;
+   border: 2px solid transparent;
+   border-radius: 0.4rem;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.3s ease-out;
+}
+
+.cta-btn:hover {
+   border: 2px solid white;
+   transition: 0.3s ease-in;
+   /* opacity: 70%; */
+   color: white;
+   background-color: rgba(239, 249, 255, 0.305);
+}
+
+.cta-btn p {
+   margin: 0px;
+   font-size: 0.8rem;
+   padding: 0.5vw 1.4vw;
 }
 
 #news {
@@ -262,7 +295,6 @@ legend {
    padding: 0
 }
 
-button,
 input,
 select,
 textarea {
@@ -271,17 +303,14 @@ textarea {
    margin: 0
 }
 
-button,
 input {
    line-height: normal
 }
 
-button,
 select {
    text-transform: none
 }
 
-button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -289,7 +318,7 @@ input[type="submit"] {
    cursor: pointer
 }
 
-button[disabled],
+
 html input[disabled] {
    cursor: default
 }
@@ -312,7 +341,7 @@ input[type="search"]::-webkit-search-decoration {
    -webkit-appearance: none
 }
 
-button::-moz-focus-inner,
+
 input::-moz-focus-inner {
    border: 0;
    padding: 0
@@ -439,23 +468,6 @@ a {
    color: #689240;
    text-decoration: none;
    border-bottom: 1px solid #689240;
-   -webkit-transition: color .2s ease-out;
-   -webkit-transition-property: color;
-   -webkit-transition-duration: .2s;
-   -webkit-transition-timing-function: ease-out;
-   -webkit-transition-delay: initial;
-   -moz-transition: color .2s ease-out;
-   -o-transition: color .2s ease-out;
-   -ms-transition: color .2s ease-out;
-   transition: color .2s ease-out;
-   transition-property: color;
-   transition-duration: .2s;
-   transition-timing-function: ease-out;
-   transition-delay: initial
-}
-
-a:hover {
-   color: #425d29
 }
 
 #main-header {
@@ -649,7 +661,7 @@ header {
 
 .slider ul li {
    float: left;
-   padding-top: 8em
+   padding-top: 5em
 }
 
 .slider h2,
@@ -670,7 +682,7 @@ header {
 #right-arrow {
    position: absolute;
    z-index: 100;
-   margin-top: 15em
+   margin-top: 10em
 }
 
 #left-arrow {
