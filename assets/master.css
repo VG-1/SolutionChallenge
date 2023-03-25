@@ -11,27 +11,36 @@ p {
    font-family: 'Raleway', sans-serif;
 }
 
-nav ul {
+.navbar {
    display: flex;
-   list-style: none;
-
+   align-items: center;
+   justify-content: space-between;
+   margin: 0 5%;
 }
 
-nav li {
-   margin-left: auto;
-   margin-right: auto;
-   font-weight: bold;
-}
-
-nav li :hover {
-   color: rgb(98, 89, 138);
-}
-nav{
-   position: fixed;
+.right-nav {
+   display: flex;
+   align-items: center;
+   grid-gap: 3vw;
    background-color: transparent;
-   width:100%;
-   margin-top: 0%;
-   z-index:10;
+}
+
+.right-nav a {
+   text-decoration: none;
+}
+
+.navbar-links {
+   margin: 0;
+   font-weight: 600;
+   font-size: 0.75rem;
+   color: #000;
+   transition: 0.3s ease-out;
+}
+
+.navbar-links:hover {
+   color: #252525;
+   transition: 0.3s ease-in;
+   transform: scale(120%);
 }
 
 .hm-cont-bg {
@@ -57,7 +66,7 @@ nav{
 .hm-main-head {
    font-family: 'Raleway', serif;
    font-weight: 300;
-   font-size: 3rem;
+   font-size: 2.5rem;
 }
 
 .c-btn {
@@ -232,10 +241,10 @@ body {
    margin: 0
 }
 
-a {
+/* a {
    background: transparent;
    text-decoration: none;
-}
+} */
 
 a:focus {
    outline: thin dotted
@@ -503,12 +512,6 @@ h6 {
    font-size: .7150000000000001em
 }
 
-a {
-   color: #689240;
-   text-decoration: none;
-   border-bottom: 1px solid #689240;
-}
-
 #main-header {
    padding: 8em 0;
    text-transform: uppercase;
@@ -767,7 +770,8 @@ header {
 }
 
 #slide2 {
-   background: #C1B04D
+   /* background: rgb(84, 194, 194) */
+   background: #443C68;
 }
 
 #slide2:after {
@@ -776,7 +780,9 @@ header {
 }
 
 #slide3 {
-   background: #89587E
+   /* background: #89587E */
+   /* background: #E49393 baby pink */
+   background: #4c6957;
 }
 
 #slide3:after {
@@ -785,7 +791,8 @@ header {
 }
 
 #slide4 {
-   background: #AA7742
+   /* background: #A4907C */
+   background: #8f79b7;
 }
 
 #slide4:after {
