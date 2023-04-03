@@ -1,0 +1,291 @@
+/* font-family: 'Outfit', sans-serif;
+font-family: 'Pavanam', sans-serif;
+font-family: 'Philosopher', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif
+    
+}
+
+/*------------------------- navbar -------------------------*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 20%; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    grid-gap: 3vw;
+    background-color: transparent;
+}
+
+.right-nav a {
+    text-decoration: none;
+}
+
+.navbar-links {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #000;
+    transition: 0.3s ease-out;
+}
+
+.navbar-links:hover {
+    color: #252525;
+    transition: 0.3s ease-in;
+    transform: scale(120%);
+}
+
+/*------------------------- navbar -------------------------*/
+
+#main-header {
+    height: 90dvh;
+    padding: 4em 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .05), 0 1px 2px rgba(0, 0, 0, .3);
+    color: #fff;
+    position: relative;
+    background: #000;
+    text-align: center;
+    z-index: -1;
+}
+
+#main-header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("images/Evergreen.jpg");
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .6;
+    z-index: -2;
+}
+
+.main-btn-cont {
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+    width: 13%;
+    margin-top: 10%;
+    transition: 0.3s ease-out;
+}
+
+.main-btn {
+    text-decoration: none;
+}
+
+.main-btn p {
+    padding: 5% 3%;
+    font-size: 0.6em;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.3em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-btn-cont:hover {
+    opacity: 50%;
+    transition: 0.3s ease-in;
+}
+
+.carousel-inner {
+    max-height: 70dvh;
+}
+
+.hm-cont-bg {
+    max-height: 80vh;
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 5%;
+    color: #FFF;
+    /* min-width: 100%; */
+}
+
+.hm-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hm-main-head {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.c-btn {
+    margin-top: 5%;
+
+}
+
+.cta-btn {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 0.4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-out;
+}
+
+.cta-btn:hover {
+    border: 2px solid white;
+    transition: 0.3s ease-in;
+    /* opacity: 70%; */
+    color: white;
+    background-color: rgba(239, 249, 255, 0.305);
+}
+
+.cta-btn p {
+    margin: 0px;
+    font-size: 0.8rem;
+    padding: 0.5vw 1.4vw;
+}
+
+/*---------------------- news-section ----------------------*/
+
+#news {
+    padding: 10% 3%;
+    background: #fafafa;
+}
+
+.news-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nws-card-col {
+    max-height: 95vh;
+    overflow-y: scroll;
+    width: 32%;
+}
+
+.nws-card {
+    /* margin: 5% 0; */
+    display: flex;
+    flex-direction: column;
+}
+
+.news-head h2 {
+    color: #1B5A96;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.news-date {
+    display: flex;
+    align-items: center;
+    margin: 4% 1.2% 0;
+}
+
+.news-date i {
+    font-size: 0.8rem;
+    color: #9F9F9F;
+}
+
+.info h1 {
+    color: #326CA1;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    margin: 3% 0 6% 0;
+}
+
+.info p {
+    color: #9F9F9F;
+    font-size: 0.5rem;
+    font-weight: bold;
+    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nm-logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    width: 50%;
+}
+
+.nm-logo p {
+    font-size: 0.7rem;
+    color: #9f9f9f;
+    font-family: 'open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.nws-cta {
+    font-size: 0.4em;
+    /* font-weight: 600; */
+    padding: 11% 5%;
+    color: #fff;
+    border: 2px solid #326CA1;
+    border-radius: 0.6em;
+    background-color: #326CA1;
+    letter-spacing: 0.2em;
+    transition: 0.2s ease-out;
+}
+
+.nws-cta:hover {
+    background-color: #FFF;
+    color: #326CA1;
+    transition: 0.3s ease-in;
+}
+
+/*---------------------- news-section ----------------------*/
+
+/*------------------------ webkits ------------------------*/
+
+::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.3em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fafafa;
+    border-radius: 1rem;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fafafa;
+    border-radius: 1rem;
+}
+
+/*------------------------ webkits ------------------------*/
