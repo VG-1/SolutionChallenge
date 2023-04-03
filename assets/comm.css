@@ -1,0 +1,228 @@
+/* font-family: 'Outfit', sans-serif;
+font-family: 'Pavanam', sans-serif;
+font-family: 'Philosopher', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    padding: 0 6vw;
+}
+
+/*------------------- navbar  */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 20%; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    grid-gap: 3vw;
+    background-color: transparent;
+}
+
+.right-nav a {
+    text-decoration: none;
+}
+
+.navbar-links {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1em;
+    color: #252525;
+    transition: 0.3s ease-out;
+    font-family: 'Outfit', sans-serif;
+}
+
+.navbar-links:hover {
+    color: #252525;
+    transition: 0.3s ease-in;
+    transform: scale(120%);
+}
+
+/*--------------------- navbar---------------------*/
+
+/*------------------- member count -------------------*/
+
+.mem-cont {
+    background-color: #9C3AB9;
+    color: #FFF;
+    text-align: center;
+    padding-bottom: 6em;
+    border-radius: 0.8rem;
+}
+
+.mem-head {
+    background-color: #FFEBB8;
+    color: #3B185F;
+    font-size: 2em;
+    letter-spacing: 0.5%;
+    word-spacing: 3px;
+    font-weight: 400;
+    padding: 0.3em 2.6em 0.4em;
+    display: inline-block;
+    border-radius: 0 0 3.5rem 3.5rem;
+}
+
+.mem-no-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 6em auto;
+}
+
+.mem-count-cont {
+    text-align: center;
+}
+
+.mem-count-cont .mem-no {
+    font-size: 5em;
+}
+
+.mem-des {
+    font-weight: 300;
+}
+
+/*------------------- member count -------------------*/
+
+/*----------------------- QUOTE -----------------------*/
+
+.q-cont {
+    text-align: center;
+    padding: 25vh 0;
+}
+
+.writer-name {
+    background-color: #FFEBB8;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+    word-spacing: 2px;
+    letter-spacing: 0.04em;
+    padding: 2vh 4vw;
+    border-radius: 3em;
+}
+
+.writer-quote {
+    font-size: 1.9em;
+    line-height: 1.2;
+    word-spacing: 0.08em;
+    margin: 1.5em 0;
+}
+
+/*----------------------- QUOTE -----------------------*/
+
+/*------------------------ FORM ------------------------*/
+
+#form {
+    margin: 10vh 0;
+}
+
+.f-cont {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-image: url("images/lavender.png");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.main-form {
+    background-color: #B053CF;
+    width: 50%;
+    padding: 0 4vw 6vh;
+}
+
+.join-us {
+    padding: 1vh 4vw 1.5vh;
+    background-color: #FFEBB8;
+    display: inline-block;
+    font-size: 1.2em;
+    border-radius: 0 0 4rem 4rem;
+}
+
+.form-det {
+    margin: 8svh 0 5svh;
+}
+
+.main-form input {
+    color: #E5B8F4;
+    font-size: 1em;
+    padding: 2vh 0 2vh 12px;
+    background-color: transparent;
+    border: 1px solid #E5B8F4;
+    border-radius: 0.4rem;
+}
+
+.main-form input::placeholder {
+    color: #E5B8F4;
+    font-size: 1em;
+}
+
+.form-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-name input {
+    width: 45%;
+}
+
+.em-co {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 5vh 0;
+}
+
+.em-co input:last-child {
+    margin-top: 5vh;
+}
+
+.des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.des input {
+    padding: 2vh 0 20vh 12px;
+}
+
+.cta {
+    text-decoration: none;
+    color: #FFEBB8;
+    text-align: center;
+}
+
+.cta p {
+    border: 2px solid #FFEBB8;
+    border-radius: 3rem;
+    font-size: 0.8em;
+    padding: 2vh 3vw;
+    width: 10%;
+    letter-spacing: 2px;
+    transition: 0.3s ease-out;
+}
+
+.cta p:hover {
+    background-color: #ffebb858;
+    transition: 0.3s ease-in;
+}
+/*------------------------ FORM ------------------------*/
