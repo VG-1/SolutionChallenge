@@ -8,8 +8,13 @@ font-family: 'Philosopher', sans-serif; */
     font-family: 'Outfit', sans-serif;
 }
 
+/* 
 body {
     padding: 0 6vw;
+} */
+
+#root {
+    padding: 0 5vw;
 }
 
 /*------------------- navbar  */
@@ -26,6 +31,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0 5%;
+    padding: 0.6rem 0;
 }
 
 .right-nav {
@@ -56,10 +62,61 @@ body {
 
 /*--------------------- navbar---------------------*/
 
+/*------------------- main-head -------------------*/
+
+#main-head {
+    background-image: url("images/background1B.jpg");
+    background-position: 50%;
+    background-size: cover;
+    color: #FFF;
+    padding: 10vh 5vw;
+}
+
+.web-name {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    margin-bottom: 3vh;
+}
+
+
+.main-head-cont h1 {
+    font-size: 8em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 500;
+}
+
+.main-head-cont h1 span {
+    font-family: 'Philosopher', sans-serif;
+    color: #d857ff;
+}
+
+.com-cont {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    margin-top: 5vh;
+}
+
+.join-btn {
+    color: #FFF;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Pavanam', sans-serif;
+    padding: 1.2vh 2.5vw;
+    background-color: #810CA8;
+    border-radius: 0.6em;
+}
+
+
+/*------------------- main-head -------------------*/
+
+
 /*------------------- member count -------------------*/
 
 .mem-cont {
-    background-color: #9C3AB9;
+    margin-top: 20vh;
+    /* background-color: #9C3AB9; */
+    background-color: #7F167F;
     color: #FFF;
     text-align: center;
     padding-bottom: 6em;
@@ -104,7 +161,7 @@ body {
 
 .q-cont {
     text-align: center;
-    padding: 25vh 0;
+    padding: 20vh 0;
 }
 
 .writer-name {
@@ -127,13 +184,89 @@ body {
 
 /*----------------------- QUOTE -----------------------*/
 
+/*-------------------- testimonials --------------------*/
+
+#testimonials {
+    margin-bottom: 20vh;
+}
+
+.scrollt {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: .5rem;
+    overflow-x: auto;
+}
+
+.test-cont {
+    background-color: #7F167F;
+    color: white;
+    padding: 4vh;
+    width: 90%;
+    border-radius: 0.8rem;
+    margin-bottom: 2vh;
+}
+
+.test-in-cont {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.user-photo {
+    width: 45%;
+    align-items: center;
+}
+
+.user-des {
+    width: 65%;
+    margin: 0 3%;
+}
+
+.u-des {
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.u-appre {
+    color: #c864c8;
+}
+
+.u-appre p:first-child {
+    font-size: 2.6em;
+}
+
+.u-appre p:last-child {
+    font-size: 1.6em;
+}
+
+/*-------------------- testimonials --------------------*/
+
 /*------------------------ FORM ------------------------*/
 
 #form {
     margin: 10vh 0;
 }
 
+.form-head {
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+}
+
+.form-head div {
+    width: 18%;
+    border-bottom: 3px solid #913175;
+    border-radius: 50em;
+}
+
+.form-head p {
+    margin: 0 0.6vw;
+    text-align: center;
+}
+
 .f-cont {
+    margin-top: 20vh;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -143,7 +276,8 @@ body {
 }
 
 .main-form {
-    background-color: #B053CF;
+    /* background-color: #B053CF; */
+    background-color: #7F167F;
     width: 50%;
     padding: 0 4vw 6vh;
 }
@@ -152,7 +286,7 @@ body {
     padding: 1vh 4vw 1.5vh;
     background-color: #FFEBB8;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.5em;
     border-radius: 0 0 4rem 4rem;
 }
 
@@ -161,16 +295,16 @@ body {
 }
 
 .main-form input {
-    color: #E5B8F4;
-    font-size: 1em;
+    color: #D58BDD;
+    font-size: 1.3em;
     padding: 2vh 0 2vh 12px;
     background-color: transparent;
-    border: 1px solid #E5B8F4;
+    border: 2px solid #a34ea3;
     border-radius: 0.4rem;
 }
 
 .main-form input::placeholder {
-    color: #E5B8F4;
+    color: #c05fc0;
     font-size: 1em;
 }
 
@@ -206,6 +340,7 @@ body {
 }
 
 .cta {
+    display: inline-block;
     text-decoration: none;
     color: #FFEBB8;
     text-align: center;
@@ -216,7 +351,7 @@ body {
     border-radius: 3rem;
     font-size: 0.8em;
     padding: 2vh 3vw;
-    width: 10%;
+    /* width: 10%; */
     letter-spacing: 2px;
     transition: 0.3s ease-out;
 }
@@ -225,4 +360,112 @@ body {
     background-color: #ffebb858;
     transition: 0.3s ease-in;
 }
+
 /*------------------------ FORM ------------------------*/
+
+
+/*----------------------- webkits -----------------------*/
+
+::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.3em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fafafa;
+    border-radius: 1rem;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7F167F;
+    border-radius: 1rem;
+}
+
+/*----------------------- webkits -----------------------*/
+
+/*------------------------ footer ------------------------*/
+
+footer {
+    background-color: rgb(25, 25, 25);
+    color: azure;
+    padding: 0 5%;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.foot-main-head {
+    font-size: 1.6rem;
+    font-family: 'Noto sans', sans-serif;
+    /* letter-spacing: 2px; */
+}
+
+.foot-main-des {
+    font-family: 'Noto sans', sans-serif;
+    margin-top: 1%;
+
+}
+
+.foot-join {
+    display: flex;
+    align-items: center;
+    grid-gap: 1vw;
+    justify-content: center;
+    font-family: 'Noto sans', sans-serif;
+}
+
+.foot-join-us {
+    color: azure;
+    font-size: 1.3rem;
+}
+
+.foot-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto sans', sans-serif;
+}
+
+.foot-in-socials {
+    margin-top: 5%;
+    display: flex;
+    grid-gap: 2.5vw;
+    align-items: center;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.foot-in-socials a {
+    text-decoration: none;
+    color: azure;
+    transition: 0.3s ease-in;
+}
+
+.foot-in-socials a:hover {
+    opacity: 60%;
+    transition: 0.3s ease-out;
+}
+
+.foot-hr {
+    width: 90%;
+    opacity: 20%;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.row-2 {
+    display: flex;
+    align-items: center;
+    grid-gap: 1vw;
+    justify-content: center;
+    padding: 2%;
+    font-family: 'Noto sans', sans-serif;
+}
+
+/*------------------------ footer ------------------------*/
