@@ -322,10 +322,107 @@ p {
 
 /*---------------------- news-section ----------------------*/
 
+/*------------------------ footer ------------------------*/
 
+#foooter {
+   background-color: rgb(25, 25, 25);
+   color: azure;
+   padding: 0 5%;
+}
 
+.row-1 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5%;
+}
 
+.foot-head {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 
+.foot-main-head {
+   font-size: 1.6rem;
+   font-family: 'Noto sans', sans-serif;
+   /* letter-spacing: 2px; */
+}
+
+.foot-main-des {
+   font-family: 'Noto sans', sans-serif;
+   margin-top: 1%;
+
+}
+
+.foot-join {
+   display: flex;
+   align-items: center;
+   grid-gap: 1vw;
+   justify-content: center;
+   font-family: 'Noto sans', sans-serif;
+}
+
+.foot-join-us {
+   color: azure;
+   font-size: 1.3rem;
+}
+
+.foot-socials {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Noto sans', sans-serif;
+}
+
+.foot-in-socials {
+   margin-top: 5%;
+   display: flex;
+   grid-gap: 2.5vw;
+   align-items: center;
+   width: 100%;
+   font-size: 1.3rem;
+}
+
+.foot-in-socials a {
+   text-decoration: none;
+   color: azure;
+   transition: 0.3s ease-in;
+}
+
+.foot-in-socials a:hover {
+   opacity: 60%;
+   transition: 0.3s ease-out;
+}
+
+.foot-hr {
+   width: 90%;
+   opacity: 20%;
+   border: none;
+   border-bottom: 1px solid white;
+}
+
+.row-2 {
+   display: flex;
+   align-items: center;
+   grid-gap: 1vw;
+   justify-content: center;
+   padding: 2%;
+   font-family: 'Noto sans', sans-serif;
+}
+
+/*------------------------ footer ------------------------*/
+
+.dalai-lama {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url("images/dalailamaBg.png");
+   background-position: 50%;
+   background-size: cover;
+   padding: 10vh 0;
+}
 
 
 
@@ -740,7 +837,7 @@ header {
 
 #macbook {
    text-align: center;
-   padding: 2em 0 7em 0
+   padding: 16vh 0;
 }
 
 #macbook img {
@@ -957,7 +1054,7 @@ header {
 }
 
 #list {
-   padding: 4em 0 4em 0
+   padding: 4em 0 0 0
 }
 
 #list i {
