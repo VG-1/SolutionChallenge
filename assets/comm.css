@@ -193,8 +193,7 @@ body {
 .scrollt {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 100%;
-    gap: .5rem;
+    grid-auto-columns: 95%;
     overflow-x: auto;
 }
 
@@ -397,6 +396,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 5%;
+}
+
+.foot-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .foot-main-head {
